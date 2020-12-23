@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App />넣고싶은 컴포넌트
   </React.StrictMode>,
   document.getElementById('root')
 );
