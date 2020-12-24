@@ -18,7 +18,7 @@ mongoose.connect(config.mongoURI,{
     useNewUrlParser: true, useUnifiedTopology:true, useCreateIndex:true, useFindAndModify:false
 }).then(()=>console.log("MongoDB Connected...")).catch(err=>console.log(err));
 
-app.get('/',((req, res) => res.send('hello World!')));
+app.get('/',((req, res) => res.send('mongoDB Activate!')));
 
 app.get('/api/hello',((req, res) => {
     res.send("안녕하세요~")
