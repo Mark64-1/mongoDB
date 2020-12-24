@@ -1,7 +1,12 @@
 import React, {useEffect} from 'react';
 import axios from "axios";
 import * as path from "path";
+import {logoutUser} from "../../../_actions/user_actions";
+import {useDispatch} from "react-redux";
+
 function LandingPage(props) {
+
+    const dispatch = useDispatch();
 
     useEffect(()=>{
         axios.get('/api/hello')
@@ -9,17 +14,18 @@ function LandingPage(props) {
     },[])
 
     const onClickHandler=()=>{
-        console.log("123412341234")
-        props.history.push("/login")
-        axios.get('/api/users/logout')
+
+        dispatch(logoutUser())
             .then(response=>{
                 if(response.data.success){
                     props.history.push("/login")
                 }else{
-                    alert("로그아웃 하는데 실패 했습니다.")
+                    alert("error")
                 }
             })
+
     }
+
 
     return (
         <div style={{
