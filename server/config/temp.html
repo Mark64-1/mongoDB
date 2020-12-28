@@ -1,0 +1,573 @@
+<section class="content" style="padding-bottom: 0; display:block;">
+    <!--프로모션 이벤트 출력//s--------------------------------->
+    <style>
+        div.event {
+            padding: 0;
+            margin: 0;
+            display: table;
+            width: 100%;
+        }
+
+        .eventItem-list-type-2 .eventItem-list-price-pri,
+        .eventItem-list-type-3 .eventItem-list-price-pri {
+            display: block !important;
+        }
+
+        .eventItem-list-type-3 {
+            display: table;
+            width: 100%
+        }
+
+        .eventItem-list-type-3 .eventItem-list-text {
+            padding: 12px 18px;
+        }
+
+        .eventItem-list-type-2 .eventItem-list-badge {
+            margin-top: 12px
+        }
+
+        .evnet-calc4 {
+            display: table
+        }
+
+        section.content {
+            display: block !important;
+        }
+
+        .evnet-calc3>div {
+            width: calc(100%/3);
+            float: left;
+            display: table;
+        }
+
+        .evnet-calc4>div {
+            width: calc(100%/4);
+            float: left;
+        }
+
+        .evnet-calc2 {
+            display: table;
+        }
+
+        .evnet-calc2 div {
+            width: calc(100%/2);
+            float: left;
+            display: table;
+        }
+
+        .evnet-calc2 div img {
+            width: 100%;
+        }
+
+        div.soldout {
+            display: none
+        }
+
+        div.hdn {
+            display: none;
+        }
+
+        .mt_5 {
+            margin-top: -5px !important;
+        }
+
+        div.event img {
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        section.content {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .evnet-calc4>div img,
+        .evnet-calc4>div a {
+            width: 100%;
+        }
+
+        p.cssp {
+            margin: 0 !important;
+            height: 0px !important;
+        }
+
+        .eventItem-list-type-3 .eventItem-list-text {
+            height: 144.5px
+        }
+
+        .eventItem-list-type-2 .eventItem-list-price-pri,
+        .eventItem-list-type-3 .eventItem-list-price-pri {
+            display: block !important;
+        }
+
+        .eventItem-list-type-3 {
+            display: table;
+            width: 100%
+        }
+
+        .eventItem-list-type-3 .eventItem-list-text {
+            padding: 12px 18px;
+        }
+
+        .eventItem-list-type-2 .eventItem-list-badge {
+            margin-top: 12px
+        }
+
+        .evnet-calc3>div {
+            width: calc(100%/3);
+            float: left;
+            display: table;
+        }
+
+        .evnet-calc2>div {
+            width: calc(100%/2) !important;
+            float: left;
+            display: table;
+        }
+
+        div.soldout {
+            display: none
+        }
+
+        div.hdn {
+            display: none;
+        }
+
+        .mt_5 {
+            margin-top: -5px !important;
+        }
+
+        div.event img {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        section.content {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .img_container {
+            position: relative;
+        }
+
+        .img_container img {
+            width: 100%
+        }
+
+        p.cssp {
+            margin: 0 !important;
+            height: 0px !important;
+        }
+
+        .event a {
+            float: left;
+        }
+
+        .time1 {
+            position: absolute;
+            font-size: 19px;
+            color: #000;
+            top: 78.5%;
+            left: 20%;
+            display: inline-block;
+            letter-spacing: -2px;
+        }
+
+        .time1 span {
+            font-weight: bold;
+        }
+
+        .img_container .badge1 {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            z-index: 99;
+            top: 20px;
+            left: 20px;
+        }
+
+        .img_container .badge2 {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            z-index: 99;
+            top: 105px;
+            left: 20px;
+        }
+
+        div.event.title {
+            position: relative;
+            height: 193px;
+            width: 100%;
+        }
+
+        div.event.title img {
+            position: absolute;
+            top: -65px;
+            z-index: 100
+        }
+
+        .popup {
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            position: fixed;
+            z-index: 999;
+            display: none;
+        }
+
+        .popup .popup_wrap {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .9);
+        }
+
+        .popup iframe {
+            width: 95%;
+            height: 190px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .video {
+            padding: 40px 30px;
+        }
+
+        .video .swiper-slide {
+            padding: 0 10px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .video .swiper-slide .title {
+            display: table;
+            margin: 0 auto 12px auto;
+        }
+
+        .video .swiper-slide .title img {
+            width: auto;
+            height: 15px;
+        }
+
+        .video .swiper-slide img {
+            width: 100%;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #fff !important;
+        }
+
+        .video_container {
+            padding: 20px 0;
+            background: #393a3b;
+        }
+
+        .button_box {
+            width: 100%;
+            display: table;
+            padding: 24px;
+            background: #1f1f1f;
+        }
+
+        .button_box div {
+            width: 100%;
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+        }
+
+        .button_box div.last {
+            margin-top: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 4px !important;
+            height: 4px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #000 !important;
+        }
+
+        @media all and (max-width:780px) {
+            .img_container .badge1 {
+                width: 20vw;
+                height: 20vw;
+                position: absolute;
+                z-index: 99;
+                top: 4vw;
+                right: 4vw;
+                left: auto;
+            }
+            .img_container .badge2 {
+                width: 20vw;
+                height: 20vw;
+                position: absolute;
+                z-index: 99;
+                top: 26vw;
+                right: 4vw;
+                left: auto;
+            }
+            .video {
+                padding: 10vw 6.5vw;
+            }
+            .video .swiper-slide {
+                padding: 0 3vw;
+                width: 90%;
+                text-align: center;
+            }
+            .video .swiper-slide .title {
+                display: table;
+                margin: 0 auto 6vw auto;
+            }
+            .popup iframe {
+                width: 95%;
+                height: 50vw;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .video .swiper-slide .title img {
+                width: auto;
+                height: 5vw;
+            }
+            .video .swiper-slide img {
+                width: 100%;
+            }
+            .swiper-pagination-bullet-active {
+                background: #fff !important;
+            }
+            .video_container {
+                padding: 5vw 0;
+                background: #393a3b;
+            }
+            .button_box {
+                width: 100%;
+                display: table;
+                padding: 8vw;
+                background: #1f1f1f;
+            }
+            .button_box div {
+                width: 100%;
+                line-height: 12vw;
+                font-size: 4vw;
+                text-align: center;
+                font-weight: bold;
+                background: #fff;
+                border: 0;
+                border-radius: 6vw;
+            }
+            .button_box div.last {
+                margin-top: 3vw;
+            }
+            div.event.title {
+                height: 54vw;
+            }
+            div.event.title img {
+                top: -18vw;
+            }
+        }
+
+    </style>
+    <!--#html-->
+    <div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/line_bn_main.png" alt="" class="fr-fil fr-dib"></div>
+        <div class="swiper-container swiper-container7 swiper-container-horizontal swiper-container-ios">
+            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-3910px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 1955px;"><img src="https://d-img.picnique.co.kr/event/201224_uplus/big_bn_5 copy.png" width="100%" class="fr-fil fr-dii" data-prod-id="1470940"></div>
+                <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 1955px;"><img src="https://d-img.picnique.co.kr/event/201224_uplus/big_bn_4.png" width="100%" class="fr-fil fr-dii" data-prod-id="1470828"></div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1955px;"><img src="https://d-img.picnique.co.kr/event/201224_uplus/big_bn_5 copy.png" width="100%" class="fr-fil fr-dii" data-prod-id="1470940"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1955px;"><img src="https://d-img.picnique.co.kr/event/201224_uplus/big_bn_4.png" width="100%" class="fr-fil fr-dii" data-prod-id="1470828"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-bullets">
+                <br>
+            </div>
+        </div>
+        <div class="event" id="1471080"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_01.png" alt="" data-prod-id="1471080" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471072"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_02.png" alt="" data-prod-id="1471072" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471087"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_03.png" alt="" data-prod-id="1471087" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_04.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471079"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_05.png" alt="" data-prod-id="1471079" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471084"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_06.png" alt="" data-prod-id="1471084" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470822"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_07.png" alt="" data-prod-id="1470822" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471064"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_08.png" alt="" data-prod-id="1471064" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471078"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_09.png" alt="" data-prod-id="1471078" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471059"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_10.png" alt="" data-prod-id="1471059" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471088"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_11.png" alt="" data-prod-id="1471088" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471086"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_12.png" alt="" data-prod-id="1471086" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471056"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_13.png" alt="" data-prod-id="1471056" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471069"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_14.png" alt="" data-prod-id="1471069" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471058"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_15.png" alt="" data-prod-id="1471058" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471067"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_16.png" alt="" data-prod-id="1471067" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471052"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_17.png" alt="" data-prod-id="1471052" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471043"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_18.png" alt="" data-prod-id="1471043" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471046"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_19.png" alt="" data-prod-id="1471046" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471044"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_20.png" alt="" data-prod-id="1471044" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471045"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_21.png" alt="" data-prod-id="1471045" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471039"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_22.png" alt="" data-prod-id="1471039" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471051"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_23.png" alt="" data-prod-id="1471051" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471049"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_24.png" alt="" data-prod-id="1471049" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471029"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_25.png" alt="" data-prod-id="1471029" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471032"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_26.png" alt="" data-prod-id="1471032" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471085"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_27.png" alt="" data-prod-id="1471085" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471018"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_28.png" alt="" data-prod-id="1471018" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471021"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_29.png" alt="" data-prod-id="1471021" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471024"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_30.png" alt="" data-prod-id="1471024" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470988"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_31.png" alt="" data-prod-id="1470988" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_32.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471081"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_33.png" alt="" data-prod-id="1471081" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471082"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_34.png" alt="" data-prod-id="1471082" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470993"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_35.png" alt="" data-prod-id="1470993" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471020"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_36.png" alt="" data-prod-id="1471020" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471019"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_37.png" alt="" data-prod-id="1471019" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470950"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_38.png" alt="" data-prod-id="1470950" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_39.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_40.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471014"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_41.png" alt="" data-prod-id="1471014" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471015"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_42.png" alt="" data-prod-id="1471015" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470828"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_43.png" alt="" data-prod-id="1470828" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus1_1_44.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_01.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471037"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_02.png" alt="" data-prod-id="1471037" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471041"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_03.png" alt="" data-prod-id="1471041" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470832"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_04.png" alt="" data-prod-id="1470832" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470989"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_05.png" alt="" data-prod-id="1470989" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470994"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_06.png" alt="" data-prod-id="1470994" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470983"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_07.png" alt="" data-prod-id="1470983" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470923"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_08.png" alt="" data-prod-id="1470923" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470946"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_09.png" alt="" data-prod-id="1470946" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470920"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_10.png" alt="" data-prod-id="1470920" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470907"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_11.png" alt="" data-prod-id="1470907" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_12.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_13.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470938"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_14.png" alt="" data-prod-id="1470938" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471034"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_15.png" alt="" data-prod-id="1471034" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471022"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_16.png" alt="" data-prod-id="1471022" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470940"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_17.png" alt="" data-prod-id="1470940" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470981"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_18.png" alt="" data-prod-id="1470981" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471013"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_19.png" alt="" data-prod-id="1471013" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470977"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_20.png" alt="" data-prod-id="1470977" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470985"><img src="https://d-img.pㅌ2icnique.co.kr/event/201224_uplus/uplus2_1_21.png" alt="" data-prod-id="1470985" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470975"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_22.png" alt="" data-prod-id="1470975" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470962"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_23.png" alt="" data-prod-id="1470962" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470945"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_24.png" alt="" data-prod-id="1470945" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470943"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_25.png" alt="" data-prod-id="1470943" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470941"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_26.png" alt="" data-prod-id="1470941" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470929"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_27.png" alt="" data-prod-id="1470929" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470841"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_28.png" alt="" data-prod-id="1470841" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470908"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_29.png" alt="" data-prod-id="1470908" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470836"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_30.png" alt="" data-prod-id="1470836" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_31.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_32.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471073"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_33.png" alt="" data-prod-id="1471073" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471083"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_34.png" alt="" data-prod-id="1471083" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471060"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_35.png" alt="" data-prod-id="1471060" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471001"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_36.png" alt="" data-prod-id="1471001" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471047"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_37.png" alt="" data-prod-id="1471047" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471061"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_38.png" alt="" data-prod-id="1471061" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471062"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_39.png" alt="" data-prod-id="1471062" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471063"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_40.png" alt="" data-prod-id="1471063" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471002"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_41.png" alt="" data-prod-id="1471002" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471023"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_42.png" alt="" data-prod-id="1471023" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471008"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_43.png" alt="" data-prod-id="1471008" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471016"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_44.png" alt="" data-prod-id="1471016" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470971"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_45.png" alt="" data-prod-id="1470971" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470930"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_46.png" alt="" data-prod-id="1470930" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470953"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_47.png" alt="" data-prod-id="1470953" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471038"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_48.png" alt="" data-prod-id="1471038" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470935"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_49.png" alt="" data-prod-id="1470935" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470849"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_50.png" alt="" data-prod-id="1470849" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470848"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_51.png" alt="" data-prod-id="1470848" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470847"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_52.png" alt="" data-prod-id="1470847" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus2_1_53.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_01.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471074"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_02.png" alt="" data-prod-id="1471074" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470949"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_03.png" alt="" data-prod-id="1470949" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471036"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_04.png" alt="" data-prod-id="1471036" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470927"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_05.png" alt="" data-prod-id="1470927" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470823"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_06.png" alt="" data-prod-id="1470823" class="fr-fil fr-dii"></div>
+        <div class="event" id="1471025"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_07.png" alt="" data-prod-id="1471025" class="fr-fil fr-dii"></div>
+        <div class="event" id="1470824"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_08.png" alt="" data-prod-id="1470824" class="fr-fil fr-dii"></div>
+        <div class="event"><img src="https://d-img.picnique.co.kr/event/201224_uplus/uplus3_09.png" alt="" class="fr-fil fr-dii"></div>
+        <div class="button_box">
+            <div class="go-qna-from-html">1:1 문의</div>
+            <div class="last go-deliver-from-html">배송조회</div>
+        </div>
+    </div>
+    <!--share ux-->
+    <script>
+        $(document).ready(function()
+        {
+            $(".tab").click(function()
+            {
+                var idx = $(this).attr("class").split(' ');
+                idx = idx[1].split("tab");
+                idx = idx[1];
+                var of = $(".tab_content_" + idx).offset().top;
+                $('html,body').stop().animate(
+                    {
+                        scrollTop: of
+                    })
+            });
+
+            $(".togle_btn").click(function()
+            {
+                $(".togle_dec").toggle();
+            });
+
+            $("#sns_sharebtns").click(function()
+            {
+                openSnasi1arePopup();
+            });
+
+            $(".sns_sharebtns_wrapper").hide();
+            $(window).scroll(function()
+            {
+                window.scrollTop = $(this).scrollTop();
+                if (window.scrollTop > 100)
+                {
+                    $(".sns_sharebtns_wrapper").show();
+
+                    // 구매하기 영역이 존재할 경우
+                    if ($('div.order-fixed-area'))
+                    {}
+                }
+                else
+                {
+                    $(".sns_sharebtns_wrapper").hide();
+                }
+            });
+        });
+        var swiper = new Swiper('.swiper-container7',
+            {
+                loop: true,
+                pagination:
+                    {
+                        el: '.swiper-pagination',
+                    },
+                autoplay:
+                    {
+                        delay: 1500,
+                        disableOnInteraction: false,
+                    },
+            });
+        $('.popup_wrap').on('click', function()
+        {
+            $('.popup').hide();
+        })
+
+    </script>
+</section>

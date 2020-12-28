@@ -23,7 +23,6 @@ function LandingPage(props) {
                     alert("error")
                 }
             })
-
     }
 
 
